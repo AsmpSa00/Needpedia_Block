@@ -1,0 +1,87 @@
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info {
+    margin-left: 20px;
+    position: relative;
+}
+
+.username-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.username {
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: block;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #333;
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.dots {
+    font-size: 1.5em;
+    cursor: pointer; /* Make it clickable */
+    border: none;
+    background-color: transparent;
+}
+
+#menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 30px; /* Position it correctly */
+    right: 0; /* Position it correctly */
+    padding: 10px;
+}
+
+#menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#menu a:hover {
+    background-color:#ddd;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover {
+    color: #ddd;
+}
+
+.icon {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.small-icon {
+    width: 16px;
+    height: 16px;
+}

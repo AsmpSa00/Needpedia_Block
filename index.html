@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile-container">
+        <img src="user.jpg" alt="Profile Picture" class="profile-picture">
+        <div class="user-info">
+            <div class="username-container">
+                <span class="username">Cat Lover</span>
+                <button class="dots" id="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </button>
+            </div>
+            <p class="description">Just a cat lover trying to make it in a dog-eat-dog world</p>
+            <div id="menu">
+                <a href="#" onclick="blockUser()"><img src="block-icon.png" alt="Block Icon" class="icon small-icon">Block</a>
+                <a href="#" onclick="addFriend()"><img src="add-friend-icon.png" alt="Add Friend Icon" class="icon small-icon">Add Friend</a>
+                <a href="#" onclick="askForHelp()"><img src="help-icon.png" alt="Help Icon" class="icon small-icon">Ask for Help</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('dots').addEventListener('click', toggleMenu);
+
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.style.display = menu.style.display === "none" ? "block" : "none";
+        }
+
+        function blockUser() {
+            alert("User has been blocked");
+        }
+
+        function addFriend() {
+            alert("Friend request sent");
+        }
+
+        function askForHelp() {
+            alert("Help request sent");
+        }
+    </script>
+</body>
+</html>
